@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>This is a test file for Nick</title>
-</head>
-<body>
-Hello WOrld! This is the services page...
-</body>
-</html>
+<h1>All the Services</h1>
+
+{% for service in services.all %}
+{{ service.summary }}
+{% endfor %}
